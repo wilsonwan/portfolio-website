@@ -1,16 +1,15 @@
 import React from "react";
-import "./index.css";
-
 import Layout from "../components/layout";
 
-class Index extends React.Component {
+class NotFound extends React.Component {
 	render() {
 		return (
 			<Layout>
-				<p>Under construction!</p>
+				<h1>404</h1>
+				<p>Uh oh...</p>
 			</Layout>
 		);
 	}
 }
 
-export default Index;
+export default NotFound;

@@ -13,11 +13,13 @@
 		"test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
 	},
 	"dependencies": {
-		"gatsby": "^2.1.30",
-		"react": "^16.8.4",
-		"react-dom": "^16.8.4"
+		"@material-ui/core": "^3.9.3",
+		"@material-ui/icons": "^3.0.2",
+		"gatsby": "^2.4.6",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6"
 	},
 	"devDependencies": {
-		"prettier": "^1.16.4"
+		"prettier": "^1.17.1"
 	}
 }
