@@ -1,0 +1,63 @@
+/* Removes underline and purple link */
+#navigationBar a {
+	text-decoration: none;
+	color: black;
+}
+#navigationBar a:visited {
+	text-decoration: none;
+}
+#navigationBar a:hover {
+	text-decoration: none;
+}
+#navigationBar a:focus {
+	text-decoration: none;
+}
+#navigationBar a:hover,
+a:active {
+	text-decoration: none;
+}
+
+/* animated underline */
+#navigationBar ul {
+	border-radius: 4px;
+	overflow: hidden;
+}
+#navigationBar li {
+	float: left;
+	width: 5%;
+}
+#navigationBar li:hover a::before {
+	right: 0;
+	left: 0;
+}
+#navigationBar a {
+	text-decoration: none;
+	text-align: center;
+	padding: 5px 0;
+	display: block;
+	position: relative;
+	transition: all 0.3s ease;
+}
+#navigationBar a:hover {
+	color: #2f8b18;
+}
+#navigationBar a::before {
+	content: "";
+	transition: all 0.4s ease-in-out;
+	position: absolute;
+	right: 50%;
+	left: 50%;
+	bottom: 0;
+	height: 2px;
+	background-color: #4add25;
+}
+#navigationBar a:hover::before {
+	right: 0;
+	left: 0;
+}
+
+li {
+	list-style: none;
+}
+
+/* TODO: Fix positions */
