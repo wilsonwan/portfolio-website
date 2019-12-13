@@ -1,6 +1,7 @@
 import React from "react";
 
 //TODO: style the component
+//TODO: move summary to siteMetadata
 export default class AboutMe extends React.Component {
 	render() {
 		return (
