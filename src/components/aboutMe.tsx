@@ -1,16 +1,23 @@
 import React from "react";
+import { graphql, StaticQuery } from "gatsby";
 
 //TODO: style the component
 //TODO: move summary to siteMetadata
 export default class AboutMe extends React.Component {
 	render() {
 		return (
-			<p>
-				Software engineer with 2 years of professional experience, have
-				a strong passion for software engineering. Confident
-				communicator, strategic planner, strong team member but capable
-				leading projects from requirement analysis to implementation.
-			</p>
+			<StaticQuery
+				query={graphql`
+					query {
+						site {
+							siteMetadata {
+								personalSummary
+							}
+						}
+					}
+				`}
+				render={data => <p>{data.site.siteMetadata.personalSummary}</p>}
+			/>
 		);
 	}
 }
