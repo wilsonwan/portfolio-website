@@ -7,9 +7,9 @@ export default class ProjectList extends React.Component {
 		return (
 			<div>
 				<p>Projects</p>
-				<Project />
-				<Project />
-				<Project />
+				<Project name="Project 1" description="Description 1" />
+				<Project name="Project 2" description="Description 2" />
+				<Project name="Project 2" description="Description 3" />
 			</div>
 		);
 	}
