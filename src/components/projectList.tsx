@@ -7,9 +7,13 @@ export default class ProjectList extends React.Component {
 		return (
 			<div>
 				<p>Projects</p>
-				<Project name="Project 1" description="Description 1" />
-				<Project name="Project 2" description="Description 2" />
-				<Project name="Project 2" description="Description 3" />
+				<Project
+					name="Project 1"
+					description="Description 1"
+					image="Image 1"
+					url="Url 1"
+					techStack={["techStack item 1", "techStack item 2"]}
+				/>
 			</div>
 		);
 	}
