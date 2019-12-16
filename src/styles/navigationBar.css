@@ -1,8 +1,3 @@
-/* Removes underline and purple link */
-#navigationBar a {
-	text-decoration: none;
-	color: black;
-}
 #navigationBar a:visited {
 	text-decoration: none;
 }

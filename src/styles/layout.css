@@ -1,0 +1,5 @@
+/* Removes underline and purple link */
+a {
+	text-decoration: none;
+	color: black;
+}

@@ -1,11 +1,12 @@
 import React from "react";
+import "../styles/contact.css";
 
 //TODO: implement component
 //TODO: style the component
 export default class Contact extends React.Component {
 	render() {
 		return (
-			<div>
+			<div id="contactSection">
 				<ul>
 					<li>
 						<a href="#">
