@@ -9,22 +9,22 @@ export default class Contact extends React.Component {
 			<div id="contactSection">
 				<ul>
 					<li>
-						<a href="#">
+						<a href="mailto:mail@wilsonwan.dev">
 							<span>Email</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a target="_blank" href="https://www.linkedin.com/in/wilsonwandev/">
 							<span>Linkedin</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a target="_blank" href="https://github.com/wilsonwan">
 							<span>Github</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a target="_blank" href="https://twitter.com/WilsonWan_">
 							<span>Twitter</span>
 						</a>
 					</li>

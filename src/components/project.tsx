@@ -1,4 +1,5 @@
 import React from "react";
+import Chip from "@material-ui/core/Chip";
 
 interface IProjectProps {
 	name: string;
@@ -20,7 +21,13 @@ export default class Project extends React.Component<IProjectProps> {
 				<p>{this.props.image}</p>
 				<p>{this.props.url}</p>
 				{this.props.techStack.map(item => {
-					return <p>{item}</p>;
+					return (
+						<Chip
+							color="primary"
+							className="chip"
+							label={item}
+						></Chip>
+					);
 				})}
 			</div>
 		);

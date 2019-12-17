@@ -8,19 +8,23 @@ import Skills from "../components/skills";
 import ProjectList from "../components/projectList";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
+import CssBaseline from "@material-ui/core/CssBaseline";
 
 //TODO: style the component
 class Index extends React.Component {
 	render() {
 		return (
-			<Layout>
-				<NavigationBar />
-				<AboutMe />
-				<Skills />
-				<ProjectList />
-				<Contact />
-				<Footer />
-			</Layout>
+			<React.Fragment>
+				<CssBaseline />
+				<Layout>
+					<NavigationBar />
+					<AboutMe />
+					<Skills />
+					<ProjectList />
+					<Contact />
+					<Footer />
+				</Layout>
+			</React.Fragment>
 		);
 	}
 }

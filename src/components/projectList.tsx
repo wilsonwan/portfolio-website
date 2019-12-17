@@ -12,7 +12,7 @@ export default class ProjectList extends React.Component {
 					description="Description 1"
 					image="Image 1"
 					url="Url 1"
-					techStack={["techStack item 1", "techStack item 2"]}
+					techStack={["React", "TypeScript"]}
 				/>
 			</div>
 		);
