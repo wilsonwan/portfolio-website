@@ -10,6 +10,7 @@
 		"develop": "gatsby develop",
 		"format": "prettier --write src/**/*.{ts,tsx,css}",
 		"lint": "eslint src/**/*.{ts,tsx}",
+		"clean": "npm run format && npm run lint",
 		"start": "npm run develop",
 		"serve": "gatsby serve",
 		"test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
