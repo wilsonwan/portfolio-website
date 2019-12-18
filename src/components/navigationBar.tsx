@@ -14,7 +14,7 @@ export default class NavigationBar extends React.Component {
 					direction="row"
 					justify="center"
 					alignItems="center"
-					spacing={4}
+					spacing={3}
 				>
 					<Grid item xs={3}>
 						<a href="#">

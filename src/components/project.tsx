@@ -1,13 +1,7 @@
 import React from "react";
+import Avatar from "@material-ui/core/Avatar";
 import Chip from "@material-ui/core/Chip";
-
-interface IProjectProps {
-	name: string;
-	description: string;
-	image: string;
-	url: string;
-	techStack: string[];
-}
+import { IProjectProps } from "../interfaces/interfaces";
 
 //TODO: implement the component with parameters to be reused
 //TODO: style the component
@@ -15,21 +9,38 @@ export default class Project extends React.Component<IProjectProps> {
 	render() {
 		return (
 			<div>
-				<p>Project here...</p>
-				<p>{this.props.name}</p>
-				<p>{this.props.description}</p>
-				<p>{this.props.image}</p>
-				<p>{this.props.url}</p>
-				{this.props.techStack.map(item => {
-					return (
-						<Chip
-							color="primary"
-							className="chip"
-							label={item}
-						></Chip>
-					);
+				<p>{this.props.Name}</p>
+				<p>{this.props.Description}</p>
+				<p>{this.props.Image}</p>
+				<p>{this.props.Url}</p>
+				{this.props.TechStack.map(item => {
+					let chip;
+					if (!this.isEmptyString(item.Avatar)) {
+						chip = (
+							<Chip
+								color={item.Color}
+								className="chip"
+								avatar={<Avatar src={item.Avatar}></Avatar>}
+								label={item.Name}
+							></Chip>
+						);
+					} else {
+						chip = (
+							<Chip
+								color={item.Color}
+								className="chip"
+								label={item.Name}
+							></Chip>
+						);
+					}
+
+					return chip;
 				})}
 			</div>
 		);
+	}
+
+	isEmptyString(value: string): boolean {
+		return value.length > 0;
 	}
 }

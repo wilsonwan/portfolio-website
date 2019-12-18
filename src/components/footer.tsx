@@ -1,5 +1,4 @@
 import React from "react";
-import { graphql, StaticQuery } from "gatsby";
 
 //TODO: style the component
 export default class Footer extends React.Component {
