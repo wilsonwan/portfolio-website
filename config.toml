@@ -59,7 +59,7 @@ disableHugoGeneratorInject = false
     keywords = ""
     images = [""]
 
-    homeSubtitle = "Software Engineer"
+    homeSubtitle = "Software Engineer // Hobbyist Game Dev"
 
     # Prefix of link to the git commit detail page. GitInfo must be enabled.
     #
