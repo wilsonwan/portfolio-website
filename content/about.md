@@ -1,4 +1,5 @@
-#+title: About Me
-#+type: static
++++
+type = "static"
++++
 
 Hello! I'm Wilson Wan
