@@ -106,7 +106,7 @@ disableHugoGeneratorInject = false
         theme = "#252627"
 
     [params.logo]
-        logoText     = "/home/wilson"
+        logoText     = "/wilson"
         logoHomeLink = "/"
         # Set true to remove the logo cursor entirely.
         # logoCursorDisabled = false
