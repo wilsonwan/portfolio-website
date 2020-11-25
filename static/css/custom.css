@@ -1,3 +1,51 @@
 .underlining {
     box-shadow: #fe518580 0px -1.5rem 0px inset;
 }
+
+p > a {
+    color: #fe5186;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: none;
+}
+
+p > a
+{
+    position: relative;
+}
+
+p > a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fe518580;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+p > a:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    padding: 0px;
+    margin: 20px 0px 0px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul.skills-list li::before {
+    content: "▹ ";
+    left: 0px;
+    color: #fe5186;
+    font-size: 20px;
+    line-height: 12px;
+}
